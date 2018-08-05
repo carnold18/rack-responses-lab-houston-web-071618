@@ -1,5 +1,7 @@
 class Application
+  
   def call(env)
+    
     time = Time.now
     
     if time.hour < 12
@@ -7,6 +9,9 @@ class Application
     else
     	resp.write "Good Afternoon!"
     end
+    
     resp.finish
+    
   end
+  
 end
