@@ -1,8 +1,8 @@
 class Application
   def call(env)
     time = Time.now
-    resp.write "#{time.hour}\n"
-    if time.hour < 12
+    hour = time.hour
+    if hour < 12
     	resp.write "Good Morning!"
     else
     	resp.write "Good Afternoon!"
