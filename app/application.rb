@@ -2,7 +2,7 @@ class Application
   
   def call(env)
     
-    resp 
+    resp = Rack::Repsonse.new
     
     time = Time.now
     
