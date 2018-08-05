@@ -1,6 +1,6 @@
 class Application
   def call(env)
-    time = Time.now.localtime.hour
+    time = Time.now
     resp.write "#{time}\n"
     if time < 
     	resp.write "Good Morning!"
