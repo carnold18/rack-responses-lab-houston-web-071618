@@ -2,6 +2,8 @@ class Application
   
   def call(env)
     
+    resp 
+    
     time = Time.now
     
     if time.hour < 12
